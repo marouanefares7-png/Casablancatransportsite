@@ -1,9 +1,8 @@
-<html lang="en">
+`html
+<!DOCTYPE html>
+<html>
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Marouane Tour</title>
-  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet"/>
+  <title>Marouane Luxury Tour</title>
   <style>
     body {
       font-family: 'Montserrat', sans-serif;
@@ -14,71 +13,111 @@
     header {
       background-color: #000;
       color: #fff;
+      padding: 20px 0;
+      text-align: center;
+    }
+    header h1 {
+      margin: 0;
+    }
+    section {
       padding: 20px;
       text-align: center;
     }
-    .hero {
-      background-image: url('https://img.freepik.com/premium-photo/landscapes-cities-morocco_24859-865.jpg?w=2000');
-      background-size: cover;
-      background-position: center;
-      height: 300px;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      color: white;
-      font-size: 2em;
-      font-weight: bold;
-    }
-    .section {
-      padding: 20px;
-    }
-    .gallery img {
-      width: 100%;
+    form {
       max-width: 400px;
-      margin: 10px;
+      margin: 0 auto;
+      background: #fff;
+      padding: 20px;
       border-radius: 8px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
     }
-    .contact {
+    label {
+      display: block;
+      margin-top: 15px;
+      font-weight: bold;
+      text-align: left;
+    }
+    input, select {
+      width: 100%;
+      padding: 10px;
+      margin-top: 5px;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+    }
+    button {
+      margin-top: 20px;
+      padding: 10px;
+      width: 100%;
       background-color: #000;
       color: #fff;
-      padding: 20px;
-      text-align: center;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
     }
-    .contact a {
-      color: #00ffcc;
-      text-decoration: none;
-      font-weight: bold;
+    button:hover {
+      background-color: #333;
+    }
+    img {
+      max-width: 600px;
+      width: 100%;
+      margin: 10px auto;
+      display: block;
+      border-radius: 8px;
     }
   </style>
 </head>
 <body>
   <header>
-    <h1>Marouane Tour Transport</h1>
-    <p>From Casablanca Airport to anywhere in Morocco</p>
+    <h1>Marouane Luxury Tour</h1>
+    <p>Book your private ride from Casablanca to any major city in Morocco</p>
+    <p>📧 marouanefares7@gmail.com | 📞 +212621617643</p>
   </header>
 
-  <div class="hero">Explore Morocco in Style</div>
-
-  <div class="section">
+  <section>
     <h2>Our Vehicles</h2>
-    <div class="gallery">
-      <img src="https://images.carexpert.com.au/resize/3000/-/app/uploads/2023/07/2024-Mercedes-Benz-V-Class-Vito-EQV-eVito-Marco-Polo-54.jpg" alt="Mercedes Vito">
-      <img src="https://paultan.org/image/2023/07/2024-Mercedes-Benz-V-Class-EQV-Vito-eVito-facelift-debut-96.jpg" alt="Mercedes E-Class">
-    </div>
-  </div>
+    <img src="https://assets.carandclassic.com/upload/cars/mercedes/C1877773/2007-mercedes-e-class-6818d87115f17.jpg" alt="Mercedes E-Class Black">
+    <img src="https://www.mercedes-benz.co.ma/content/dam/hq/passengercars/cars/v-class/v-class-exterior/jcrcontent/media/image.img.1024.jpeg" alt="Mercedes Vito Black">
+  </section>
 
-  <div class="section">
+  <section>
     <h2>Discover Morocco</h2>
-    <div class="gallery">
-      <img src="https://wander-lush.org/wp-content/uploads/2022/12/Most-beautiful-places-in-Morocco-DP-Casablanca.jpg" alt="Casablanca">
-      <img src="https://media.timeout.com/images/105237888/image.jpg" alt="Moroccan City">
-    </div>
-  </div>
+    <img src="https://upload.wikimedia.org/wikipedia/commons/3/3e/Casablanca_Morocco.jpg" alt="Casablanca">
+    <img src="https://upload.wikimedia.org/wikipedia/commons/2/2f/Marrakech_Morocco.jpg" alt="Marrakech">
+  </section>
 
-  <div class="contact">
-    <h2>Make a Reservation</h2>
-    <p>Email: <a href="mailto:marouanefares7@gmail.com">marouanefares7@gmail.com</a></p>
-    <p>WhatsApp: <a href="https://wa.me/212621617643">+212 621 617643</a></p>
-  </div>
+  <section>
+    <h2>Book Your Transfer</h2>
+    <form action="mailto:marouanefares7@gmail.com" method="POST" enctype="text/plain">
+      <label for="pickup">Pickup Location</label>
+      <select id="pickup" name="Pickup Location" required>
+        <option value="Casablanca Center">Casablanca Center</option>
+        <option value="Casablanca Airport">Casablanca Airport</option>
+      </select>
+
+      <label for="destination">Destination</label>
+      <select id="destination" name="Destination" required>
+        <option value="Rabat">Rabat</option>
+        <option value="Marrakech">Marrakech</option>
+        <option value="Agadir">Agadir</option>
+        <option value="Tangier">Tangier</option>
+        <option value="Fes">Fes</option>
+        <option value="Ouarzazate">Ouarzazate</option>
+        <option value="Essaouira">Essaouira</option>
+        <option value="Chefchaouen">Chefchaouen</option>
+      </select>
+
+      <label for="date">Transfer Date</label>
+      <input type="date" id="date" name="Transfer Date" required>
+
+      <label for="name">Your Name</label>
+      <input type="text" id="name" name="Name" required>
+
+      <label for="phone">Phone Number</label>
+      <input type="tel" id="phone" name="Phone" required>
+
+      <button type="submit">Book Now</button>
+    </form>
+  </section>
 </body>
 </html>
+`
