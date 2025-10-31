@@ -70,7 +70,7 @@
   <div class="section">
     <h2>Discover Morocco</h2>
     <div class="gallery">
-      <img src="https://wander-lush.org/wp-content/uploads/2022/12/Most-beautiful-places-in-Morocco-DP-Ait-Benhaddou.jpg" alt="Ait Benhaddou">
+      <img src="https://wander-lush.org/wp-content/uploads/2022/12/Most-beautiful-places-in-Morocco-DP-Casablanca.jpg" alt="Casablanca">
       <img src="https://media.timeout.com/images/105237888/image.jpg" alt="Moroccan City">
     </div>
   </div>
