@@ -1,5 +1,3 @@
-`html
-<!DOCTYPE html>
 <html>
 <head>
   <title>Marouane Luxury Tour</title>
@@ -75,24 +73,21 @@
 
   <section>
     <h2>Our Vehicles</h2>
-    <img src="https://assets.carandclassic.com/upload/cars/mercedes/C1877773/2007-mercedes-e-class-6818d87115f17.jpg" alt="Mercedes E-Class Black">
-    <img src="https://www.mercedes-benz.co.ma/content/dam/hq/passengercars/cars/v-class/v-class-exterior/jcrcontent/media/image.img.1024.jpeg" alt="Mercedes Vito Black">
+    <img src="https://www.platinumautohaus.com/imagetag/14754/7/l/Used-2022-Mercedes-Benz-E-Class-E-350.jpg" alt="Mercedes E-Class Black">
+    <img src="https://www.morocco-transport.com/wp-content/uploads/2020/11/vito-mercedes-.png" alt="Mercedes Vito Black">
   </section>
 
   <section>
     <h2>Discover Morocco</h2>
-    <img src="https://upload.wikimedia.org/wikipedia/commons/3/3e/Casablanca_Morocco.jpg" alt="Casablanca">
-    <img src="https://upload.wikimedia.org/wikipedia/commons/2/2f/Marrakech_Morocco.jpg" alt="Marrakech">
+    <img src="https://trekbible.com/wp-content/uploads/2018/04/casablanca-2807439_1920.jpg" alt="Casablanca">
+    <img src="https://wallpaperaccess.com/full/2172018.jpg" alt="Marrakech">
   </section>
 
   <section>
     <h2>Book Your Transfer</h2>
     <form action="mailto:marouanefares7@gmail.com" method="POST" enctype="text/plain">
-      <label for="pickup">Pickup Location</label>
-      <select id="pickup" name="Pickup Location" required>
-        <option value="Casablanca Center">Casablanca Center</option>
-        <option value="Casablanca Airport">Casablanca Airport</option>
-      </select>
+      <label for="pickup">Pickup Address (Casablanca)</label>
+      <input type="text" id="pickup" name="Pickup Address" placeholder="e.g. 12 Rue de Paris, Casablanca" required>
 
       <label for="destination">Destination</label>
       <select id="destination" name="Destination" required>
